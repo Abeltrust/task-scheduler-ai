@@ -3,7 +3,7 @@ import { Trash2, Mic, Volume2, CheckCircle, Music, Coffee, Book, Zap, AlertTrian
 
 // IMPORTANT: Move this to an environment variable in a real app!
 // For demo purposes only
-const OPENAI_API_KEY = "NEXT_PUBLIC_OPENAI_KEY";
+const OPENAI_API_KEY = process.env.NEXT_PUBLIC_OPENAI_KEY;
 
 export default function Home() {
   const [tasks, setTasks] = useState([]);
